@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InsertContact">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Name"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etname"
+            android:layout_margin="20dp"
+            android:hint="Email Address"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etemail"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Contact Number"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rbmale"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etcontact"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rbfemale"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbmale"
+            android:text="feMale" />
+
+        <RadioButton
+            android:id="@+id/rb10"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbfemale"
+            android:text="10th" />
+
+        <RadioButton
+            android:id="@+id/rb12th"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb10"
+            android:text="12th" />
+
+        <RadioButton
+            android:id="@+id/rbundergraduation"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="undergraduation"
+            android:layout_below="@id/rb12th" />
+
+        <RadioButton
+            android:id="@+id/graduaion"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="graduation"
+            android:layout_below="@id/rbundergraduation"/>
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_height="wrap_content"
+            android:layout_margin="45dp"
+            android:layout_width="match_parent"
+            android:text="SUBMIT"
+            android:layout_below="@id/graduaion"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
